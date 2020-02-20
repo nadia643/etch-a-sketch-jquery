@@ -18,6 +18,16 @@
 
             }
         })
+
+        function chooseGridSize() {
+            const size = prompt("Please enter a number");
+            if (size < 16 || size > 100) {
+                alert("That is not a valid number; please try again")
+            }
+            else {
+                alert("Good number choosing")
+            }
+        }
     </script>
 </head>
 <body>
@@ -26,9 +36,14 @@
     </h1>
 
     <div class="buttons">
-        <button id="button-grid-size">
-            Choose Grid Size
-        </button>
+        <button 
+        class="button"
+        id="button-grid-size"
+        onClick="chooseGridSize()">Choose Grid Size</button>
+        <button 
+        class="button"
+        id="button-clear-grid"
+        onClick=>Clear Grid</button>
     </div>
     <div class="square-container"> 
         <div class="square"></div> 
