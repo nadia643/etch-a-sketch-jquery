@@ -1,0 +1,36 @@
+$main-peach:  RGB(238, 120, 120);
+$background-grey: #c7c6c5;
+
+body {
+    background: $background-grey;
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+.button-grid-size {
+    background-color: $main-peach;
+    height: 40px;
+    width: auto;
+    text-align: center;
+
+    &:hover {
+        background-color: lighten(#ee7878, 8%);
+        cursor: grab;
+    }
+}
+
+.square-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  }
+
+  .square {
+    border: 0.5px solid rgba(0, 0, 0, 0.8);
+  }
