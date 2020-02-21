@@ -10,6 +10,31 @@
     <title>Etch-a-sketch</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
+
+
+    //jquery grid drawing    
+    const rows = 8;
+    const columns = 8;
+    const $row = $("<div />", {
+        class: 'row'
+    });
+    const $square = $("<div />", {
+        class: 'square'
+    });
+
+    $(document).ready(function () {
+        //add columns to the the temp row object
+        for (var i = 0; i < columns; i++) {
+            $row.append($square.clone());
+        }
+        //clone the temp row object with the columns to the wrapper
+        for (var i = 0; i < rows; i++) {
+            $("#wrapper").append($row.clone());
+        }
+    }); 
+
+
+        //makes squares go pink
         $(function() {
             $('.square').hover(function() {
                 $(this).css('background-color', 'RGB(238, 120, 120');
@@ -18,7 +43,7 @@
 
             }
         })
-
+        //disco function
         $(function() {
             $('#disco').click(function() {
                 $(".square").each(function(index) {
@@ -31,11 +56,6 @@
     });
 
 
-
-
-
-
-
         function chooseGridSize() {
             const size = prompt("Please enter a number");
             if (size < 10 || size > 100) {
@@ -45,6 +65,7 @@
                 alert("Good number choosing")
             }
         }
+
     </script>
 </head>
 <body>
@@ -65,8 +86,12 @@
         class="button"
         id="disco">Let's go disco</button>
     </div>
+
+    <div id="wrapper">
+        
+    </div>
     <div class="square-container"> 
-        <div class="square"></div> 
+        <!-- <div class="square"></div> 
         <div class="square"></div> 
         <div class="square"></div> 
         <div class="square"></div>
@@ -167,7 +192,7 @@
         <div class="square"></div>
         <div class="square"></div>         
         <div class="square"></div>         
-         
+          -->
     </div>
     
 </body>

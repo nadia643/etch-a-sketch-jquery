@@ -36,6 +36,31 @@ h1 {
     grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
   }
 
-  .square {
-    border: 0.5px solid rgba(0, 0, 0, 0.8);
-  }
+//   .square {
+//     border: 0.5px solid rgba(0, 0, 0, 0.8);
+//   }
+
+
+//jquery css
+  #wrapper {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+}
+
+.row {
+    width: auto;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+
+    margin: 0px;
+
+    outline: 1px solid;
+    display: inline-block;
+    float: left;
+    background: $background-grey;
+}
