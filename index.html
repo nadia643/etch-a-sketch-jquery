@@ -19,9 +19,26 @@
             }
         })
 
+        $(function() {
+            $('#disco').click(function() {
+                $(".square").each(function(index) {
+                    let colorR = Math.floor((Math.random() * 256));
+                    let colorG = Math.floor((Math.random() * 256));
+                    let colorB = Math.floor((Math.random() * 256));
+        $(this).css("background-color", "rgb(" + colorR + "," + colorG + "," + colorB + ")");
+        });
+    });
+    });
+
+
+
+
+
+
+
         function chooseGridSize() {
             const size = prompt("Please enter a number");
-            if (size < 16 || size > 100) {
+            if (size < 10 || size > 100) {
                 alert("That is not a valid number; please try again")
             }
             else {
@@ -44,6 +61,9 @@
         class="button"
         id="button-clear-grid"
         onClick=>Clear Grid</button>
+        <button
+        class="button"
+        id="disco">Let's go disco</button>
     </div>
     <div class="square-container"> 
         <div class="square"></div> 
