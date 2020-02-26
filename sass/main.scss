@@ -38,11 +38,20 @@ h1 {
     }
 }
 
-.drop-content {
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content p {
     display: block;
     background: $main-peach;
     padding: 10px 36px;
     margin-top: 2px;
+}
+
+dropdown:hover .drop-content {
+    display: block;
 }
 
 

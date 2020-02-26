@@ -25,11 +25,18 @@ h1 {
     background-color: #f39c9c;
     cursor: grab; }
 
-.drop-content {
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.drop-content p {
   display: block;
   background: RGB(238, 120, 120);
   padding: 10px 36px;
   margin-top: 2px; }
+
+dropdown:hover .drop-content {
+  display: block; }
 
 .square-container {
   max-width: 400px;
