@@ -55,16 +55,26 @@
     });
     });
 
-
+        //when the user clicks, toggle between hiding and showing content
         function chooseGridSize() {
-            const size = prompt("Please enter a number");
-            if (size < 10 || size > 100) {
-                alert("That is not a valid number; please try again")
-            }
-            else {
-                alert("Good number choosing")
-            }
+            document.getElementById("button-grid-size").classList.toggle("show");
+            
         }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.button-grid')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 
     </script>
 </head>
@@ -74,126 +84,31 @@
     </h1>
 
     <div class="buttons">
+        <div class="dropdown"> 
         <button 
-        class="button"
-        id="button-grid-size"
+        class="button-grid"
         onClick="chooseGridSize()">Choose Grid Size</button>
+        <div id="drop-content" class="drop-content">
+            <p>8x8</p>
+            <p>10x10</p>
+            <p>12x12</p>
+        </div>
+    </div>
         <button 
         class="button"
         id="button-clear-grid"
-        onClick=>Clear Grid</button>
+        onClick="window.location.reload()">Clear Grid</button>
         <button
         class="button"
         id="disco">Let's go disco</button>
     </div>
 
+
+
+
     <div id="wrapper">
         
     </div>
-    <div class="square-container"> 
-        <!-- <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>          
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>          
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>
-        <div class="square"></div> 
-        <div class="square"></div>         
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div> 
-        <div class="square"></div>
-        <div class="square"></div>         
-        <div class="square"></div>         
-          -->
-    </div>
-    
+
 </body>
 </html>

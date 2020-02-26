@@ -26,6 +26,25 @@ h1 {
     }
 }
 
+.button-grid {
+    background-color: $main-peach;
+    height: 40px;
+    width: auto;
+    text-align: center;
+
+    &:hover {
+        background-color: lighten(#ee7878, 8%);
+        cursor: grab;
+    }
+}
+
+.drop-content {
+    display: block;
+    background: $main-peach;
+    padding: 10px 36px;
+    margin-top: 2px;
+}
+
 
 .square-container {
     max-width: 400px;
@@ -64,3 +83,5 @@ h1 {
     float: left;
     background: $background-grey;
 }
+
+  
