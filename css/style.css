@@ -33,7 +33,8 @@ h1 {
   display: block;
   background: RGB(238, 120, 120);
   padding: 10px 36px;
-  margin-top: 2px; }
+  margin-top: 2px;
+  font-size: 12px; }
 
 dropdown:hover .drop-content {
   display: block; }
