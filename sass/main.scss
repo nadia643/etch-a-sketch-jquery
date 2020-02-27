@@ -43,6 +43,12 @@ h1 {
     display: inline-block;
 }
 
+.drop-content {
+    z-index: 1;
+    display: none;
+    position: absolute;
+}
+
 .drop-content p {
     display: block;
     background: $main-peach;

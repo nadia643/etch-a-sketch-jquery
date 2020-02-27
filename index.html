@@ -55,25 +55,15 @@
     });
     });
 
-        //when the user clicks, toggle between hiding and showing content
-        function chooseGridSize() {
-            document.getElementById("button-grid-size").classList.toggle("show");
-            
+    function chooseGridSize() {
+        const click = document.getElementById("drop-content");
+        if (click.style.display === "none") {
+            click.style.display = "block";
+        } else {
+            click.style.display = "none";
         }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-        if (!event.target.matches('.button-grid')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-      }
     }
-  }
-}
+
 
 
     </script>
