@@ -69,13 +69,3 @@ dropdown:hover .drop-content {
   display: inline-block;
   float: left;
   background: #c7c6c5; }
-
-table {
-  width: 80%;
-  border-collapse: collapse; }
-
-.cell {
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  height: 15px; }

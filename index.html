@@ -9,82 +9,9 @@
     href = "./css/style.css" />
     <title>Etch-a-sketch</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-
-
-    // //jquery grid drawing    
-    // const rows = 8;
-    // const columns = 8;
-    // const $row = $("<div />", {
-    //     class: 'row'
-    // });
-    // const $square = $("<div />", {
-    //     class: 'square'
-    // });
-
-    // $(document).ready(function () {
-    //     //add columns to the the temp row object
-    //     for (var i = 0; i < columns; i++) {
-    //         $row.append($square.clone());
-    //     }
-    //     //clone the temp row object with the columns to the wrapper
-    //     for (var i = 0; i < rows; i++) {
-    //         $("#wrapper").append($row.clone());
-    //     }
-    // }); 
-        
-        const autogrid = function() {
-            const rowMaker = function() {
-                for(i = 0; i < 16; i++) {
-                    $("#table").append("tr class = 'row> </tr>");
-                }
-            }
-            rowMaker();
-            
-            const cellMaker = function() {
-                for(i = 0; i < 16; 1++){
-                    $("#row").append("tr class = 'cell'> </tr>");
-                }
-            }
-            cellMaker();
-            console.log("autogrid");
-        }
-
-        //makes squares go pink
-        $(function() {
-            $('.square').hover(function() {
-                $(this).css('background-color', 'RGB(238, 120, 120');
-            }), 
-            function() {
-
-            }
-        })
-        //disco function
-        $(function() {
-            $('#disco').click(function() {
-                $(".square").each(function(index) {
-                    let colorR = Math.floor((Math.random() * 256));
-                    let colorG = Math.floor((Math.random() * 256));
-                    let colorB = Math.floor((Math.random() * 256));
-        $(this).css("background-color", "rgb(" + colorR + "," + colorG + "," + colorB + ")");
-        });
-    });
-    });
-
-    //makes dropdown show upon click
-    function chooseGridSize() {
-        const click = document.getElementById("drop-content");
-        if (click.style.display === "none") {
-            click.style.display = "block";
-        } else {
-            click.style.display = "none";
-        }
-    }
-
-
-
-    </script>
+    <script src="./script.js"></script>
 </head>
+
 <body>
     <h1>
         Etch-a-sketch
@@ -108,13 +35,19 @@
         <button
         class="button"
         id="disco">Let's go disco</button>
+        <button
+        class="button"
+        id="number-button">8x8</button>
+        <button
+        class="button"
+        id="number-button">10x10</button>
+        <button
+        class="button"
+        id="number-button">12x12</button>
+        
     </div>
 
-
-
-
     <div id="wrapper">
-        
     </div>
 
 </body>
