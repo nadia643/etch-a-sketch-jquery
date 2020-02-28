@@ -1,3 +1,21 @@
+    //work on grid size buttons
+    function Choice () {
+        let eight = document.getElementById("eight");
+        let ten = document.getElementById("ten");
+        let twelve = document.getElementById("twelve");
+    
+        if (eight.clicked == true) {
+            console.log("8");
+        } else if (ten.clicked == true) {
+            console.log("10");
+        } else {
+            console.log("12");
+        };
+    };
+    
+    Choice ();
+
+
 
     //jquery grid drawing    
     const rows = 8;

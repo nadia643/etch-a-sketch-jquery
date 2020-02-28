@@ -1,1 +1,4 @@
-Dropdown works on click - need to make the grid responsive to size
+Want to make the const of rows and columns change with onClick
+
+I've done this if/else statement at the top - try and attach this
+to the buttons
