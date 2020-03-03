@@ -15,8 +15,8 @@
     
     // Choice ();
 
-    $( "button" ).click(function firstClick () {
-    });
+    // $( "button" ).click(function firstClick () {
+    // });
 
     // const firstClick = function() {
     //     const rows = 2;
@@ -42,33 +42,85 @@
     // }
 
     //switch statement for rows and columns
+    // let allButtons = document.getElementsByTagName('button');
 
-    function firstClick() {
+    // for (let i = 0; i < allButtons.length; i++) {
+    //     allButtons[i].onclick = werewolfSituation;
+    // }
+    
+    // function werewolfSituation(e) {
 
-  
-        // let rows;
-        // let columns;    
-    switch (firstClick) {
-        case eight:
-             rows = 8
-             columns = 8
-            break;
-        case document.getElementById("number-button-ten").onClick() {
-            let rows = 10
-            let columns = 10
-        }
-            break;
-        case twelve:
-             rows = 12
-             columns = 12
-            break;
-        
-    }
-    }
+    // const moonPhase = this.innerHTML;
+    // switch (moonPhase) {
+    //     case "8x8": 
+    //     let rows = 8;
+    //     let columns = 8;
+    //     const $row = $("<div />", {
+    //         class: 'row'
+    //     });
+    //     const $square = $("<div />", {
+    //         class: 'square'
+    //     });
+    
+    //     $(document).ready(function () {
+    //         //add columns to the the temp row object
+    //         for (var i = 0; i < columns; i++) {
+    //             $row.append($square.clone());
+    //         }
+    //         //clone the temp row object with the columns to the wrapper
+    //         for (var i = 0; i < rows; i++) {
+    //             $("#wrapper").append($row.clone());
+    //         }
+    //     }); 
+    //     break;
+    //     case "10x10": 
+    //     let rows = 10;
+    //     let columns = 10;
+    //     const $row = $("<div />", {
+    //         class: 'row'
+    //     });
+    //     const $square = $("<div />", {
+    //         class: 'square'
+    //     });
+    
+    //     $(document).ready(function () {
+    //         //add columns to the the temp row object
+    //         for (var i = 0; i < columns; i++) {
+    //             $row.append($square.clone());
+    //         }
+    //         //clone the temp row object with the columns to the wrapper
+    //         for (var i = 0; i < rows; i++) {
+    //             $("#wrapper").append($row.clone());
+    //         }
+    //     }); 
+    //     break;        
+    //     case "12x12": 
+    //     let rows = 12;
+    //     let columns = 12;
+    //     const $row = $("<div />", {
+    //         class: 'row'
+    //     });
+    //     const $square = $("<div />", {
+    //         class: 'square'
+    //     });
+    
+    //     $(document).ready(function () {
+    //         //add columns to the the temp row object
+    //         for (var i = 0; i < columns; i++) {
+    //             $row.append($square.clone());
+    //         }
+    //         //clone the temp row object with the columns to the wrapper
+    //         for (var i = 0; i < rows; i++) {
+    //             $("#wrapper").append($row.clone());
+    //         }
+    //     }); 
+    //     break;
 
+    // }
+    // }
     //jquery grid drawing    
-    // const rows = 8;
-    // const columns = 8;
+    const rows = 8;
+    const columns = 8;
     const $row = $("<div />", {
         class: 'row'
     });

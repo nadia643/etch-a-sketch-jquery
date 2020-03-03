@@ -3,7 +3,9 @@ Want to make the const of rows and columns change with onClick
 I've done this if/else statement at the top - try and attach this
 to the buttons
 
-Mon eve: give function a name
 
 SyntaxError: function statement requires a name
 This comes up when you click on 10
+
+
+switch statements didnt work
