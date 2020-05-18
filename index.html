@@ -13,22 +13,21 @@
 </head>
 
 <body>
-    <h1>
-        Etch-a-sketch
-    </h1>
-
+   
+<!-- 
     <div class="buttons">
         <div class="dropdown"> 
         <button 
         class="button-grid"
-        onClick="chooseGridSize()">Choose Grid Size</button>
+        id="button-grid"
+        >Choose Grid Size</button>
         <div id="drop-content" class="drop-content">
             <p>8x8</p>
             <p>10x10</p>
             <p>12x12</p>
         </div>
-    </div>
-        <button 
+    </div> -->
+        <!-- <button 
         class="button"
         id="button-clear-grid"
         onClick="window.location.reload()">Clear Grid</button>
@@ -46,12 +45,35 @@
         <button
         class="button"
         id="number-button-twelve"
-        >12x12</button>
+        >12x12</button> -->
+
+    <!-- </div> -->
+
+    <!-- <div id="wrapper">
+    </div> -->
+
+    <div class="page"> 
+        <h1>
+            Etch-a-sketch
+        </h1>
+        <div class="buttons">
+    <button 
+        class="button" 
+        id="button-grid" 
+        onClick="createGrid()"
+    >
+        Choose your grid size
+    </button>
+    <button
+        class="button"
+        onClick=resetColorOfBoxes()
+    > Reset me 
+    </button>
+    
 
     </div>
+    <div id="container"></div>
 
-    <div id="wrapper">
     </div>
-
 </body>
 </html>
