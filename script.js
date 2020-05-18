@@ -41,8 +41,10 @@
     // });
 
 
+
 function createGrid() {
     document.getElementById('container').innerHTML = "";
+
     let numberOfRows = prompt("Enter a number");
     if (isNaN(numberOfRows)) {
         alert("That's not a number. Please try again!")

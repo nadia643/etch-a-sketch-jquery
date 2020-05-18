@@ -38,6 +38,7 @@ h1 {
     align-items: center;
     justify-items: center;
   }
+
   #container > div > div{
       float: left;
       height: 90px;
@@ -45,4 +46,10 @@ h1 {
       border-bottom:1px solid black;
       width: 90px;
   } 
+
+#container {
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+}
 
